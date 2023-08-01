@@ -1,0 +1,190 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#2D5E62">
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/back_btn"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:background="@drawable/back_btn"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="23dp"
+        android:layout_marginStart="20dp"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/left_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:layout_marginStart="110dp"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/main_logo"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/logo_image"
+            android:layout_marginBottom="90dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"/>
+
+        <ImageView
+            android:id="@+id/couphone_tv"
+            android:layout_width="120dp"
+            android:layout_height="27dp"
+            android:src="@drawable/logo_text_white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/main_logo" />
+
+        <TextView
+            android:id="@+id/detail_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="매장을 등록해보세요!"
+            android:textColor="@color/white"
+            android:textSize="12sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/couphone_tv" />
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/right_cl"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        app:layout_constraintStart_toEndOf="@id/left_cl"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginEnd="0dp">
+
+        <TextView
+            android:id="@+id/brand_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="브랜드 선택"
+            android:layout_marginTop="60dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <TextView
+            android:id="@+id/brand_tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="브랜드 등록 후 선택이 가능합니다 :0"
+            android:layout_marginTop="62dp"
+            android:layout_marginStart="40dp"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@id/brand_tv"
+            android:textColor="#FFEECD"
+            android:textSize="8sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/brand_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:hintEnabled="false"
+            app:layout_constraintStart_toStartOf="@id/brand_tv"
+            app:layout_constraintTop_toBottomOf="@id/brand_tv">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/brand_et"
+                android:layout_width="215dp"
+                android:layout_height="33dp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/store_name_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="지점명"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@id/brand_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/store_name_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:hintEnabled="false"
+            app:layout_constraintStart_toStartOf="@id/store_name_tv"
+            app:layout_constraintTop_toBottomOf="@id/store_name_tv">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/benefit_et"
+                android:layout_width="215dp"
+                android:layout_height="33dp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:id="@+id/location_tv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="매장 위치"
+            android:layout_marginTop="18dp"
+            app:layout_constraintTop_toBottomOf="@id/store_name_layout"
+            app:layout_constraintStart_toStartOf="parent"
+            android:textColor="@color/white"
+            android:textSize="11sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/location_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            app:hintEnabled="false"
+            app:layout_constraintStart_toStartOf="@id/location_tv"
+            app:layout_constraintTop_toBottomOf="@id/location_tv">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/store_manage_et"
+                android:layout_width="215dp"
+                android:layout_height="33dp"
+                android:background="@drawable/rounded_edittext"
+                android:inputType="textPersonName"
+                android:padding="10dp" />
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/complete_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="완료하기"
+            android:textSize="10sp"
+            android:textColor="@color/white"
+            android:backgroundTint="#2D5E62"
+            android:layout_marginBottom="30dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"/>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
