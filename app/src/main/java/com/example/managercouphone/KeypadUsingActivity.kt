@@ -3,14 +3,14 @@ package com.example.managercouphone
 import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import com.example.managercouphone.databinding.ActivityKeypadBinding
-import com.example.managercouphone.databinding.ActivityUsingConfirmBinding
+import com.example.managercouphone.databinding.ActivityKeypadUsingBinding
 
-class KeypadActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityKeypadBinding
+class KeypadUsingActivity : AppCompatActivity() {
+    private lateinit var binding : ActivityKeypadUsingBinding
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        binding = ActivityKeypadBinding.inflate(layoutInflater)
+        binding = ActivityKeypadUsingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
         val tv_num = binding.numbersTv
@@ -102,7 +102,7 @@ class KeypadActivity : AppCompatActivity() {
         }
 
         binding.btnOkay.setOnClickListener {
-            val intent = Intent(this, SavingConfirmActivity::class.java)
+            val intent = Intent(this, UsingConfirmActivity::class.java)
             startActivity(intent)
         }
     }

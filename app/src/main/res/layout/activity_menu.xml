@@ -36,6 +36,7 @@
         android:layout_marginLeft="44dp">
 
         <ImageButton
+            android:id="@+id/menu_saving_button"
             android:layout_width="250dp"
             android:layout_height="140dp"
             android:background="@drawable/coupon" />
@@ -67,6 +68,7 @@
         android:layout_marginRight="44dp">
 
         <ImageButton
+            android:id="@+id/menu_using_button"
             android:layout_width="250dp"
             android:layout_height="140dp"
             android:background="@drawable/coupon" />

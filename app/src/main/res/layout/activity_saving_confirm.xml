@@ -76,6 +76,7 @@
             android:layout_marginBottom="10dp">
 
             <Button
+                android:id="@+id/saving_confirm_correct"
                 android:text="맞아요! 적립할게요 :)"
                 android:layout_width="match_parent"
                 android:layout_height="88dp"
@@ -85,6 +86,7 @@
                 android:padding="5dp"/>
 
             <Button
+                android:id="@+id/saving_confirm_wrong"
                 android:text="번호 다시 입력할게요"
                 android:layout_width="match_parent"
                 android:layout_height="88dp"

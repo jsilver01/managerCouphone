@@ -13,7 +13,7 @@
         android:theme="@style/Theme.ManagerCouphone"
         tools:targetApi="31">
         <activity
-            android:name=".MainActivity"
+            android:name=".MenuActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -21,6 +21,24 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".KeypadActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".SavingConfirmActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".SavingActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".KeypadUsingActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".UsingConfirmActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".UsingActivity"
+            android:exported="true"/>
     </application>
 
 </manifest>

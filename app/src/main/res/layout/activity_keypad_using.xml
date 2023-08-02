@@ -3,7 +3,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2D5E62">
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#2D5E62"
+    tools:context=".KeypadActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_cl"
@@ -15,7 +17,7 @@
             android:id="@+id/keypad_tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="쿠폰 적립을 위해"
+            android:text="쿠폰 사용을 위해"
             android:textSize="18sp"
             android:textColor="#FFEECD"
             app:layout_constraintStart_toStartOf="parent"
@@ -35,13 +37,38 @@
             app:layout_constraintTop_toBottomOf="@id/keypad_tv1"
             android:layout_marginTop="5dp" />
 
-        <androidx.constraintlayout.widget.ConstraintLayout
+        <TextView
+            android:id="@+id/numbers_010"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="45dp"
+            android:text="010 "
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/keypad_tv2"
+            app:layout_constraintStart_toStartOf="@+id/keypad_tv2"/>
+
+
+        <TextView
+            android:id="@+id/numbers_tv"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="전화번호 입력"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            app:layout_constraintTop_toBottomOf="@id/keypad_tv2"
+            app:layout_constraintStart_toEndOf="@id/numbers_010"/>
+
+        <!--<androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:layout_marginTop="210dp">
+            app:layout_constraintTop_toTopOf="parent">
+
+
 
             <TextView
                 android:id="@+id/keypad_tv3"
@@ -50,7 +77,7 @@
                 android:text="010 - "
                 android:textSize="30sp"
                 android:textColor="#FFEECD"
-                android:layout_marginTop="30dp" />
+                android:layout_marginTop="30dp"/>
 
             <TextView
                 android:id="@+id/keypad_et1"
@@ -61,8 +88,8 @@
                 android:text=" _ _ _ _"
                 android:textSize="30sp"
                 android:textColor="#FFEECD"
-                android:backgroundTint="#FFEECD">
-            </TextView>
+                android:backgroundTint="#FFEECD"/>
+
 
             <TextView
                 android:id="@+id/keypad_tv4"
@@ -82,11 +109,11 @@
                 android:layout_marginTop="30dp"
                 android:textSize="30sp"
                 android:textColor="#FFEECD"
-                android:backgroundTint="#FFEECD">
-            </TextView>
+                android:backgroundTint="#FFEECD"/>
 
 
-        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>-->
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -122,13 +149,13 @@
             android:layout_height="176dp"
             android:layout_gravity="bottom"
             android:rowCount="4"
-            android:columnCount="4"
+            android:columnCount="3"
             android:orientation="horizontal"
             android:layout_marginBottom="10dp">
 
             <Button
                 android:id="@+id/btn_one"
-                android:text="  1"
+                android:text="1"
                 android:layout_width="84dp"
                 android:layout_height="44dp"
                 android:backgroundTint="#00ff0000"
@@ -154,7 +181,7 @@
                 android:layout_column="2"
                 android:backgroundTint="#00ff0000"
                 android:padding="5dp"
-                android:text="3  "
+                android:text="3"
                 android:textColor="#2D5E62"
                 android:textSize="22sp" />
 
@@ -164,7 +191,7 @@
                 android:layout_height="44dp"
                 android:backgroundTint="#00ff0000"
                 android:textColor="#2D5E62"
-                android:text="  4"
+                android:text="4"
                 android:layout_row="1"
                 android:layout_column="0"
                 android:textSize="22sp"
@@ -186,7 +213,7 @@
                 android:layout_height="44dp"
                 android:backgroundTint="#00ff0000"
                 android:textColor="#2D5E62"
-                android:text="6  "
+                android:text="6"
                 android:textSize="22sp"
                 android:padding="5dp" />
 
@@ -196,7 +223,7 @@
                 android:layout_height="44dp"
                 android:backgroundTint="#00ff0000"
                 android:textColor="#2D5E62"
-                android:text="  7"
+                android:text="7"
                 android:layout_row="2"
                 android:layout_column="0"
                 android:textSize="22sp"
@@ -220,7 +247,7 @@
                 android:layout_column="2"
                 android:backgroundTint="#00ff0000"
                 android:padding="5dp"
-                android:text="9  "
+                android:text="9"
                 android:textColor="#2D5E62"
                 android:textSize="22sp" />
 
@@ -230,7 +257,7 @@
                 android:layout_height="44dp"
                 android:backgroundTint="#00ff0000"
                 android:textColor="#2D5E62"
-                android:text="  <"
+                android:text="지움"
                 android:layout_row="3"
                 android:layout_column="0"
                 android:textSize="22sp"
@@ -252,7 +279,7 @@
                 android:layout_height="44dp"
                 android:backgroundTint="#00ff0000"
                 android:textColor="#2D5E62"
-                android:text="OK  "
+                android:text="OK"
                 android:textSize="19sp"
                 android:padding="5dp"/>
 
