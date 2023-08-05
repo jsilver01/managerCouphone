@@ -90,4 +90,16 @@
             android:layout_marginTop="70dp"/>
     </FrameLayout>
 
+    <Button
+        android:id="@+id/register_brand_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:text="아직 매장 등록을 안 하셨나요?"
+        android:textSize="13sp"
+        android:background="@android:color/transparent"
+        app:layout_constraintTop_toBottomOf="@+id/saving_fl"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -39,6 +39,14 @@
         <activity
             android:name=".UsingActivity"
             android:exported="true"/>
+        <activity
+            android:name=".RegisterBrandActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".RegisterStoreActivity"
+            android:exported="true"/>
     </application>
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
 
 </manifest>

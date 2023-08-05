@@ -22,5 +22,10 @@ class MenuActivity : AppCompatActivity() {
             val intent = Intent(this, KeypadUsingActivity::class.java)
             startActivity(intent)
         }
+
+        binding.registerBrandButton.setOnClickListener {
+            val intent = Intent(this, RegisterBrandActivity::class.java)
+            startActivity(intent)
+        }
     }
 }
