@@ -13,5 +13,15 @@ class SavingActivity : AppCompatActivity() {
         binding = ActivitySavingBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        binding.savingBackground.setOnClickListener {
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
+
+        binding.mainCl.setOnClickListener {
+            val intent = Intent(this, MenuActivity::class.java)
+            startActivity(intent)
+        }
+
     }
 }
