@@ -20,7 +20,7 @@ class UsingConfirmActivity : AppCompatActivity() {
         }
 
         binding.usingConfirmWrong.setOnClickListener {
-            val intent = Intent(this, KeypadUsingActivity::class.java)
+            val intent = Intent(this, KeypadPinActivity::class.java)
             startActivity(intent)
         }
     }

@@ -5,7 +5,7 @@
     android:layout_height="match_parent"
     xmlns:tools="http://schemas.android.com/tools"
     android:background="#2D5E62"
-    tools:context=".KeypadActivity">
+    tools:context=".KeypadPinActivity">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_cl"
@@ -29,7 +29,7 @@
             android:id="@+id/keypad_tv2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="고객님의 전화번호를 입력해주세요"
+            android:text="고객님의 간편 비밀번호를 입력해주세요"
             android:textSize="18sp"
             android:textColor="#FFEECD"
             app:layout_constraintStart_toStartOf="parent"
@@ -50,17 +50,15 @@
             app:layout_constraintStart_toStartOf="@+id/keypad_tv2"/>-->
 
 
-        <EditText
-            android:id="@+id/numbers_et"
+        <TextView
+            android:id="@+id/numbers_tv"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:layout_marginLeft="45dp"
-            android:text="전화번호  입력"
-            android:textSize="25sp"
+            android:layout_marginLeft="55dp"
+            android:text="간편 비밀번호 입력"
+            android:textSize="28sp"
             android:textColor="@color/white"
-            android:inputType="phone"
-            android:background="@android:color/transparent"
             app:layout_constraintTop_toBottomOf="@id/keypad_tv2"
             app:layout_constraintStart_toStartOf="@id/keypad_tv2"/>
 

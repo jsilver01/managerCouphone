@@ -22,6 +22,12 @@
             </intent-filter>
         </activity>
         <activity
+            android:name=".MainActivity"
+            android:exported="true"/>
+        <activity
+            android:name=".KeypadPinActivity"
+            android:exported="true"/>
+        <activity
             android:name=".KeypadActivity"
             android:exported="true"/>
         <activity
