@@ -37,7 +37,7 @@
             app:layout_constraintTop_toBottomOf="@id/keypad_tv1"
             android:layout_marginTop="5dp" />
 
-        <TextView
+        <!--<TextView
             android:id="@+id/numbers_010"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
@@ -47,19 +47,22 @@
             android:textSize="25sp"
             android:textColor="@color/white"
             app:layout_constraintTop_toBottomOf="@id/keypad_tv2"
-            app:layout_constraintStart_toStartOf="@+id/keypad_tv2"/>
+            app:layout_constraintStart_toStartOf="@+id/keypad_tv2"/>-->
 
 
-        <TextView
-            android:id="@+id/numbers_tv"
-            android:layout_width="200dp"
+        <EditText
+            android:id="@+id/numbers_et"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="50dp"
-            android:text="전화번호 입력"
+            android:layout_marginLeft="45dp"
+            android:text="전화번호  입력"
             android:textSize="25sp"
             android:textColor="@color/white"
+            android:inputType="phone"
+            android:background="@android:color/transparent"
             app:layout_constraintTop_toBottomOf="@id/keypad_tv2"
-            app:layout_constraintStart_toEndOf="@id/numbers_010"/>
+            app:layout_constraintStart_toStartOf="@id/keypad_tv2"/>
 
         <!--<androidx.constraintlayout.widget.ConstraintLayout
             android:layout_width="wrap_content"
