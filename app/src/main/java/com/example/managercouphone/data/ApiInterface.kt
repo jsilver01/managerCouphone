@@ -11,21 +11,22 @@ interface ApiInterface {
         @Header("Authorization") token: String
     ): Call<UserInfoResponse>
 
-    @GET("/coupons")
-    fun getCoupons(
-        @Header("Authorization") token: String
+    @POST("/coupons")
+    fun postCoupons(
+        @Header("Authorization") token: String,
+        @Body coupon: Coupon
     ): Call<CouponResponse>
 
-    @GET("/coupons/status/{coupon-id}")
+    @PATCH("/coupons/status/{coupon-id}")
     fun getCouponUseResponse(
         @Header("Authorization") token: String,
         @Path("coupon-id") couponId: Int
     ): Call<CouponUseResponse>
 
-    @GET("/coupons/stamp/{coupon-id}")
+    @PATCH("/coupons/stamp/{coupon-id}")
     fun getCouponGetResponse(
         @Header("Authorization") token: String,
-        @Path("coupon-id") couponId: Int
+        @Path("coupon-id") couponId: Int,
     ): Call<CouponGetResponse>
 
 

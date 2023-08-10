@@ -2,67 +2,81 @@ package com.example.managercouphone
 
 import android.content.Intent
 import android.os.Bundle
+import android.util.Log
 import android.widget.EditText
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.example.managercouphone.data.ApiClient
+import com.example.managercouphone.data.ApiInterface
+import com.example.managercouphone.data.CouponGetResponse
+import com.example.managercouphone.data.CouponGetResult
+import com.example.managercouphone.data.UserResponse
+import com.example.managercouphone.data.getRetrofit
+import com.example.managercouphone.data.user_token
 import com.example.managercouphone.databinding.ActivityKeypadBinding
-import com.example.managercouphone.databinding.ActivityUsingConfirmBinding
+import retrofit2.Call
+import retrofit2.Callback
+import retrofit2.Response
 
 class KeypadActivity : AppCompatActivity() {
-    private lateinit var binding : ActivityKeypadBinding
+    private lateinit var binding: ActivityKeypadBinding
+    private val apiService = ApiClient().apiClient
+
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityKeypadBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        val et_num = binding.numbersEt
+        val etNum = binding.numbersEt
 
         binding.btnZero.setOnClickListener {
-            appendNumber(et_num, "0")
+            appendNumber(etNum, "0")
         }
 
         binding.btnOne.setOnClickListener {
-            appendNumber(et_num, "1")
+            appendNumber(etNum, "1")
         }
 
         binding.btnTwo.setOnClickListener {
-            appendNumber(et_num, "2")
+            appendNumber(etNum, "2")
         }
 
         binding.btnThree.setOnClickListener {
-            appendNumber(et_num, "3")
+            appendNumber(etNum, "3")
         }
 
         binding.btnFour.setOnClickListener {
-            appendNumber(et_num, "4")
+            appendNumber(etNum, "4")
         }
 
         binding.btnFive.setOnClickListener {
-            appendNumber(et_num, "5")
+            appendNumber(etNum, "5")
         }
 
         binding.btnSix.setOnClickListener {
-            appendNumber(et_num, "6")
+            appendNumber(etNum, "6")
         }
 
         binding.btnSeven.setOnClickListener {
-            appendNumber(et_num, "7")
+            appendNumber(etNum, "7")
         }
 
         binding.btnEight.setOnClickListener {
-            appendNumber(et_num, "8")
+            appendNumber(etNum, "8")
         }
 
         binding.btnNine.setOnClickListener {
-            appendNumber(et_num, "9")
+            appendNumber(etNum, "9")
         }
 
         binding.btnDelete.setOnClickListener {
-            if (et_num.text.isNotEmpty()) {
-                et_num.text = et_num.text.delete(et_num.text.length - 1, et_num.text.length)
+            if (etNum.text.isNotEmpty()) {
+                etNum.text = etNum.text.delete(etNum.text.length - 1, etNum.text.length)
             }
         }
 
         binding.btnOkay.setOnClickListener {
+            val phoneNumber = etNum.text.toString().replace("[^\\d]".toRegex(), "")
             val intent = Intent(this, SavingConfirmActivity::class.java)
             startActivity(intent)
         }
@@ -102,4 +116,6 @@ class KeypadActivity : AppCompatActivity() {
         }
         return formattedNumber.toString()
     }
+
+
 }
