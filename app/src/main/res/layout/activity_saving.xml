@@ -19,7 +19,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="130dp"
             android:layout_marginStart="380dp"
-            android:text="'김윤서' 님"
+            android:text="'이재현' 님"
             android:textColor="#FFEECD"
             android:textSize="40sp"
             android:gravity="center"
