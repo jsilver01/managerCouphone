@@ -18,11 +18,12 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="안녕하세요 ‘매장명’ 입니다 :-)"
+            android:text="안녕하세요 빽다방 입니다 :-)"
             android:textColor="@color/white"
-            android:textSize="20sp"
+            android:textSize="30sp"
             app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="50dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
@@ -33,29 +34,33 @@
         app:layout_constraintTop_toBottomOf="@id/hello_tv"
         app:layout_constraintStart_toStartOf="parent"
         android:layout_marginTop="44dp"
-        android:layout_marginLeft="44dp">
+        android:layout_marginLeft="50dp">
 
         <ImageButton
             android:id="@+id/menu_saving_button"
-            android:layout_width="250dp"
-            android:layout_height="140dp"
-            android:background="@drawable/coupon" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/coupon"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="100dp"/>
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/logo_text"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"/>
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="170dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="적립하기"
             android:textColor="#2D5E62"
-            android:textSize="25sp"
+            android:textSize="30sp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="70dp"/>
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="230dp"/>
     </FrameLayout>
 
     <FrameLayout
@@ -65,41 +70,46 @@
         app:layout_constraintTop_toBottomOf="@id/hello_tv"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_marginTop="44dp"
-        android:layout_marginRight="44dp">
+        android:layout_marginRight="150dp">
 
         <ImageButton
             android:id="@+id/menu_using_button"
-            android:layout_width="250dp"
-            android:layout_height="140dp"
-            android:background="@drawable/coupon" />
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/coupon"
+            android:layout_marginStart="100dp"
+            android:layout_marginTop="100dp"/>
 
         <ImageView
-            android:layout_width="150dp"
-            android:layout_height="34dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/logo_text"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="32dp"/>
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="170dp"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginStart="50dp"
+            android:layout_marginTop="230dp"
             android:text="사용하기"
             android:textColor="#2D5E62"
-            android:textSize="25sp"
-            android:layout_gravity="center_horizontal"
-            android:layout_marginTop="70dp"/>
+            android:textSize="30sp" />
     </FrameLayout>
 
     <Button
         android:id="@+id/register_brand_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="5dp"
+        android:layout_marginTop="50dp"
         android:text="아직 매장 등록을 안 하셨나요?"
-        android:textSize="13sp"
+        android:textSize="21sp"
+        android:textColor="@color/white"
         android:background="@android:color/transparent"
         app:layout_constraintTop_toBottomOf="@+id/saving_fl"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

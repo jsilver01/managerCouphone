@@ -4,12 +4,11 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#2D5E62"
-    tools:context=".UsingConfirmActivity">
+    android:background="#2D5E62">
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_cl"
-        android:layout_width="390dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toStartOf="@id/side_fl"
         tools:layout_editor_absoluteY="0dp">
@@ -18,14 +17,14 @@
             android:id="@+id/keypad_tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginTop="128dp"
-            android:text="userName 님"
+            android:layout_marginBottom="130dp"
+            android:text="'김윤서' 님"
             android:textColor="#FFEECD"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintHorizontal_bias="0.501"
+            android:textSize="40sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent" />
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginStart="370dp"/>
 
         <TextView
             android:id="@+id/keypad_tv2"
@@ -34,43 +33,45 @@
             android:layout_marginTop="10dp"
             android:text="쿠폰 사용 도와드릴까요?"
             android:textColor="#FFEECD"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="40sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/keypad_tv1" />
+            app:layout_constraintTop_toBottomOf="@id/keypad_tv1"
+            android:layout_marginStart="250dp"/>
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
         android:id="@+id/side_fl"
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:background="#2D5E62"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintTop_toTopOf="parent" >
 
         <ImageView
-            android:layout_width="match_parent"
+            android:layout_width="500dp"
             android:layout_height="match_parent"
-            android:background="@drawable/side_bar" />
+            android:background="@drawable/side_bar"
+            />
 
         <ImageView
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/logo_image"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="80dp" />
 
         <ImageView
-            android:layout_width="120dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/logo_text"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="120dp"/>
+            android:layout_marginTop="250dp"/>
+
 
         <GridLayout
-            android:layout_width="250dp"
-            android:layout_height="176dp"
+            android:layout_width="match_parent"
+            android:layout_height="400dp"
             android:layout_gravity="bottom"
             android:rowCount="2"
             android:columnCount="1"
@@ -81,20 +82,20 @@
                 android:id="@+id/using_confirm_correct"
                 android:text="쿠폰 사용할게요"
                 android:layout_width="match_parent"
-                android:layout_height="88dp"
+                android:layout_height="200dp"
                 android:backgroundTint="#00ff0000"
                 android:textColor="#2D5E62"
-                android:textSize="15sp"
+                android:textSize="25sp"
                 android:padding="5dp"/>
 
             <Button
                 android:id="@+id/using_confirm_wrong"
                 android:text="더 생각해볼게요"
                 android:layout_width="match_parent"
-                android:layout_height="88dp"
+                android:layout_height="200dp"
                 android:backgroundTint="#00ff0000"
                 android:textColor="#2D5E62"
-                android:textSize="15sp"
+                android:textSize="25sp"
                 android:padding="5dp" />
         </GridLayout>
     </FrameLayout>

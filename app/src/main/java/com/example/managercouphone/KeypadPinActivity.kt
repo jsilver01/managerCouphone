@@ -16,7 +16,7 @@ class KeypadPinActivity : AppCompatActivity() {
         val tv_num = binding.numbersTv
 
         binding.btnZero.setOnClickListener {
-            if(tv_num.text == "간편 비밀번호 입력"){
+            if(tv_num.text == "비밀번호 입력"){
                 tv_num.text = "${binding.btnZero.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnZero.text}"
@@ -24,7 +24,7 @@ class KeypadPinActivity : AppCompatActivity() {
         }
 
         binding.btnOne.setOnClickListener {
-            if(tv_num.text=="간편 비밀번호 입력"){
+            if(tv_num.text=="비밀번호 입력"){
                 tv_num.text = "${binding.btnOne.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnOne.text}"
@@ -32,7 +32,7 @@ class KeypadPinActivity : AppCompatActivity() {
         }
 
         binding.btnTwo.setOnClickListener {
-            if(tv_num.text == "간편 비밀번호 입력"){
+            if(tv_num.text == "비밀번호 입력"){
                 tv_num.text = "${binding.btnTwo.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnTwo.text}"
@@ -40,7 +40,7 @@ class KeypadPinActivity : AppCompatActivity() {
         }
 
         binding.btnThree.setOnClickListener {
-            if(tv_num.text == "간편 비밀번호 입력"){
+            if(tv_num.text == "비밀번호 입력"){
                 tv_num.text = "${binding.btnThree.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnThree.text}"
@@ -48,7 +48,7 @@ class KeypadPinActivity : AppCompatActivity() {
         }
 
         binding.btnFour.setOnClickListener {
-            if(tv_num.text == "간편 비밀번호 입력"){
+            if(tv_num.text == "비밀번호 입력"){
                 tv_num.text = "${binding.btnFour.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnFour.text}"
@@ -56,7 +56,7 @@ class KeypadPinActivity : AppCompatActivity() {
         }
 
         binding.btnFive.setOnClickListener {
-            if(tv_num.text == "간편 비밀번호 입력"){
+            if(tv_num.text == "비밀번호 입력"){
                 tv_num.text = "${binding.btnFive.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnFive.text}"
@@ -64,7 +64,7 @@ class KeypadPinActivity : AppCompatActivity() {
         }
 
         binding.btnSix.setOnClickListener {
-            if(tv_num.text == "간편 비밀번호 입력"){
+            if(tv_num.text == "비밀번호 입력"){
                 tv_num.text = "${binding.btnSix.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnSix.text}"
@@ -72,7 +72,7 @@ class KeypadPinActivity : AppCompatActivity() {
         }
 
         binding.btnSeven.setOnClickListener {
-            if(tv_num.text == "간편 비밀번호 입력"){
+            if(tv_num.text == "비밀번호 입력"){
                 tv_num.text = "${binding.btnSeven.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnSeven.text}"
@@ -80,7 +80,7 @@ class KeypadPinActivity : AppCompatActivity() {
         }
 
         binding.btnEight.setOnClickListener {
-            if(tv_num.text == "간편 비밀번호 입력"){
+            if(tv_num.text == "비밀번호 입력"){
                 tv_num.text = "${binding.btnEight.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnEight.text}"
@@ -88,7 +88,7 @@ class KeypadPinActivity : AppCompatActivity() {
         }
 
         binding.btnNine.setOnClickListener {
-            if(tv_num.text == "간편 비밀번호 입력"){
+            if(tv_num.text == "비밀번호 입력"){
                 tv_num.text = "${binding.btnNine.text}"
             } else {
                 tv_num.text = "${tv_num.text}${binding.btnNine.text}"

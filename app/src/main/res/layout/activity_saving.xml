@@ -8,7 +8,7 @@
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:id="@+id/main_cl"
-        android:layout_width="390dp"
+        android:layout_width="match_parent"
         android:layout_height="match_parent"
         app:layout_constraintEnd_toStartOf="@id/side_fl"
         tools:layout_editor_absoluteY="0dp">
@@ -17,12 +17,12 @@
             android:id="@+id/keypad_tv1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="50dp"
-            android:text="userName 님"
+            android:layout_marginBottom="130dp"
+            android:layout_marginStart="380dp"
+            android:text="'김윤서' 님"
             android:textColor="#FFEECD"
-            android:textSize="18sp"
+            android:textSize="40sp"
             android:gravity="center"
-            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toBottomOf="parent"/>
@@ -34,17 +34,17 @@
             android:layout_marginTop="10dp"
             android:text="쿠폰 1개 적립되었습니다."
             android:textColor="#FFEECD"
-            android:textSize="18sp"
-            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="40sp"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/keypad_tv1" />
+            app:layout_constraintTop_toBottomOf="@id/keypad_tv1"
+            android:layout_marginStart="250dp"/>
 
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 
     <FrameLayout
         android:id="@+id/side_fl"
-        android:layout_width="250dp"
+        android:layout_width="wrap_content"
         android:layout_height="match_parent"
         android:background="#2D5E62"
         app:layout_constraintEnd_toEndOf="parent"
@@ -52,25 +52,24 @@
 
         <ImageView
             android:id="@+id/saving_background"
-            android:layout_width="match_parent"
+            android:layout_width="500dp"
             android:layout_height="match_parent"
             android:background="@drawable/side_bar" />
 
         <ImageView
             android:id="@+id/logo_iv1"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/logo_image"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="30dp" />
+            android:layout_marginTop="80dp" />
 
         <ImageView
-            android:id="@+id/logo_iv2"
-            android:layout_width="120dp"
-            android:layout_height="27dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
             android:background="@drawable/logo_text"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="120dp"/>
+            android:layout_marginTop="250dp"/>
 
         <TextView
             android:id="@+id/keypad_tv3"
@@ -78,9 +77,9 @@
             android:layout_height="wrap_content"
             android:text="자세한 쿠폰 현황은"
             android:textColor="#2D5E62"
-            android:textSize="16sp"
+            android:textSize="30sp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="200dp"/>
+            android:layout_marginTop="450dp"/>
 
         <TextView
             android:id="@+id/keypad_tv4"
@@ -88,9 +87,9 @@
             android:layout_height="wrap_content"
             android:text="COUPHONE 앱을 통해"
             android:textColor="#2D5E62"
-            android:textSize="16sp"
+            android:textSize="30sp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="235dp" />
+            android:layout_marginTop="495dp" />
 
         <TextView
             android:id="@+id/keypad_tv5"
@@ -98,9 +97,9 @@
             android:layout_height="wrap_content"
             android:text="확인할 수 있어요 :)"
             android:textColor="#2D5E62"
-            android:textSize="16sp"
+            android:textSize="30sp"
             android:layout_gravity="center_horizontal"
-            android:layout_marginTop="270dp" />
+            android:layout_marginTop="540dp" />
 
     </FrameLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
